@@ -1,0 +1,41 @@
+- name: Copy leds source file
+  ansible.builtin.copy:
+    src: files/leds.py
+    dest: leds.py
+    owner: pi
+    mode: '0644'
+    backup: yes
+  register: leds_src
+
+- name: Add LEDs service
+  become: true
+  ansible.builtin.template:
+    src: templates/leds.service.j2
+    dest: /etc/systemd/system/leds.service
+    owner: root
+    group: root
+    mode: '0644'
+  register: leds_srv
+
+- name: Reload LEDs service if changed
+  become: true
+  ansible.builtin.service:
+    name: leds
+    state: restarted
+    daemon_reload: true
+  when: leds_srv.changed
+
+- name: Restart LEDs service if needed
+  become: true
+  ansible.builtin.service:
+    name: leds
+    state: restarted
+    daemon_reload: true
+  when: leds_src.changed or leds_srv.changed
+
+- name: Enable & start LEDs service
+  become: true
+  ansible.builtin.service:
+    name: leds
+    enabled: yes
+    state: started

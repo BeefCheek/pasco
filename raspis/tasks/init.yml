@@ -1,0 +1,77 @@
+- name: Disable IPv6 with sysctl
+  become: true
+  ansible.posix.sysctl:
+    name: "{{ item }}"
+    value: "1"
+    state: "present"
+    reload: "yes"
+  with_items:
+    - net.ipv6.conf.all.disable_ipv6
+    - net.ipv6.conf.default.disable_ipv6
+    - net.ipv6.conf.lo.disable_ipv6
+
+- name: Add wifi networks
+  become: true
+  ansible.builtin.template:
+    src: templates/wpa_supplicant.conf.j2
+    dest: /etc/wpa_supplicant/wpa_supplicant.conf
+    owner: root
+    group: root
+    mode: '0600'
+
+- name: Copy esekeyd config
+  become: true
+  ansible.builtin.copy:
+    src: files/esekeyd.conf
+    dest: /etc/esekeyd.conf
+    owner: root
+    mode: '0644'
+    backup: yes
+
+# - name: Copy blinkatest
+#   ansible.builtin.copy:
+#     src: files/blinkatest.py
+#     dest: blinkatest.py
+#     owner: pi
+#     mode: '0644'
+#     backup: yes
+
+# - name: Get i2c
+#   become: true
+#   ansible.builtin.command: raspi-config nonint get_i2c
+#   register: i2c
+#   changed_when: false
+
+# - ansible.builtin.debug:
+#     var: i2c
+#     verbosity: 1
+
+# - name: Enable i2c
+#   become: true
+#   ansible.builtin.command: raspi-config nonint do_i2c 0
+#   when: i2c.stdout != "0"
+
+# - name: Get spi
+#   become: true
+#   ansible.builtin.command: raspi-config nonint get_spi
+#   register: spi
+#   changed_when: false
+
+# - ansible.builtin.debug:
+#     var: i2c
+#     verbosity: 1
+
+# - name: Enable spi
+#   become: true
+#   ansible.builtin.command: raspi-config nonint do_spi 0
+#   when: spi.stdout != "0"
+
+# - name: Change default sound card
+#   become: true
+#   ansible.builtin.lineinfile:
+#     path: /etc/asound.conf
+#     line: "{{ item }}"
+#     create: yes
+#   loop:
+#     - "defaults.pcm.card 3"
+#     - "defaults.ctl.card 3"

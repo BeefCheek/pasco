@@ -1,0 +1,44 @@
+# - name: upgrade packages
+#   become: true
+#   ansible.builtin.apt:
+#     autoclean: yes
+#     autoremove: yes
+#     upgrade: yes
+#     update_cache: true
+
+- name: install packages
+  become: true
+  ansible.builtin.apt:
+    name:
+      - micro
+      - i2c-tools
+      - libgpiod-dev
+      - python3-libgpiod
+      - esekeyd
+    state: present
+  register: apts
+
+# - name: install python libraries while ensuring the umask is 0022 (to ensure other users can use it)
+#   become: True
+#   ansible.builtin.pip:
+#     executable: pip3
+#     name:
+#       - RPi.GPIO
+#       - rpi_ws281x
+#       - adafruit-circuitpython-neopixel
+#       - adafruit-blinka
+#       - python-osc
+#     umask: "0022"
+#   register: pips
+
+- name: Enable esekeyd at boot
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/default/esekeyd
+    regexp: '^START_ESEKEYD='
+    line: START_ESEKEYD=true
+
+- name: Reboot machine and send a message
+  become: true
+  ansible.builtin.reboot:
+  when: apts.changed # or pips.changed

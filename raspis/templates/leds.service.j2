@@ -1,0 +1,13 @@
+[Unit]
+Description=Start LEDs
+After=multi-user.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/home/pi
+RemainAfterExit=true
+ExecStart=python3 leds.py -c 0.06 -s 0.95 -b .1 -n {{ nleds }}
+
+[Install]
+WantedBy=multi-user.target

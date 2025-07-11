@@ -1,0 +1,12 @@
+[Unit]
+Description=OSC proxy
+After=multi-user.target
+
+[Service]
+User=root
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/.virtualenvs/osc/bin/python3 osc.py -d /dev/ttyUSB0 -p sensor1 -t 100 -n 12
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

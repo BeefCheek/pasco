@@ -1,0 +1,45 @@
+all:
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+    ansible_user: pi
+    ansible_become_pass: "tozolosushi"
+    ansible_ssh_pass: "tozolosushi"
+    wifis:
+      - ssid: Livebox_L337
+        psk: comoestaenlacasa
+        priority: 2
+      - ssid: Freebox-3B1B30
+        psk: abcd1234ab
+        priority: 1
+      - ssid: HUAWEI-B528-C13F
+        psk: 7122Q8DT53R
+        priority: 3
+  children:
+    raspis:
+      children:
+        sculptures:
+          hosts:
+            rnbo:
+              name: rnbo
+              ansible_host: 192.168.1.109
+              nleds: 0
+              nsensors: 6
+              threshold: 70
+            # wayne:
+            #   name: wayne
+            #   ansible_host: wayne.local
+            #   nleds: 5
+            #   nsensors: 9
+            #   threshold: 20
+            # jj:
+            #   name: jj
+            #   ansible_host: jj.local
+            #   nleds: 5
+            #   nsensors: 5
+            #   threshold: 15
+            # debug:
+            #   name: debug
+            #   ansible_host: debug.local
+            #   nleds: 3
+            #   nsensors: 5
+            #   threshold: 20

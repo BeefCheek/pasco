@@ -1,0 +1,39 @@
+- name: Copy osc source file
+  ansible.builtin.copy:
+    src: files/osc.py
+    dest: osc.py
+    owner: pi
+    mode: '0644'
+    backup: yes
+  register: osc_src
+
+- name: Add OSC service
+  become: true
+  ansible.builtin.template:
+    src: templates/osc.service.j2
+    dest: /etc/systemd/system/osc.service
+    owner: root
+    group: root
+    mode: '0644'
+  register: osc_srv
+
+- name: Reload OSC service if changed
+  become: true
+  ansible.builtin.service:
+    name: osc
+    state: reloaded
+  when: osc_srv.changed
+
+- name: Restart OSC service if needed
+  become: true
+  ansible.builtin.service:
+    name: osc
+    state: restarted
+  when: osc_src.changed or osc_srv.changed
+
+- name: Enable & start OSC service
+  become: true
+  ansible.builtin.service:
+    name: osc
+    enabled: yes
+    state: started

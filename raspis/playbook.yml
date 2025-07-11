@@ -1,0 +1,7 @@
+- name: setup
+  hosts: sculptures
+  tasks:
+    - include_tasks: tasks/init.yml
+    - include_tasks: tasks/packages.yml
+    # - include_tasks: tasks/leds.yml
+    - include_tasks: tasks/osc.yml
