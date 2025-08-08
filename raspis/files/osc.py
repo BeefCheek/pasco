@@ -18,7 +18,7 @@ with serial.Serial(args.device, 115200) as ser:
     while True:
         line =  ser.readline()
         try:
-            values = [int(v) for v in line.decode().split(" ")[:args.nsensors]]
+            values = [int(v) for v in line.decode().split()[:args.nsensors]]
             ovalues = [1 if int(v) > args.threshold else 0 for v in values]
             if args.verbose and (sum(ovalues) > 0):
                 print(values)
