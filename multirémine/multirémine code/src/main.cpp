@@ -28,6 +28,8 @@ volatile bool touchedDetected = false;
 
 const int RESET_DELAY = 2000;
 const int CALIBRATION_LOOP_DELAY = 50;
+const uint32_t IDLE_RECALIBRATION_INTERVAL = 30000; // ms the key must stay idle before recalibration
+const int16_t IDLE_THRESHOLD = 8; // deviation band considered as idle
 
 AT42QT2120 touch_sensor(Wire,ATQ_CHANGE);
 SimpleKalmanFilter* kalman = (SimpleKalmanFilter*)malloc(sizeof(SimpleKalmanFilter) * 12);
@@ -45,8 +47,7 @@ int16_t baseValues[12] = {0};
 int16_t averagedValues[12] = {0};
 int16_t maxValues[12] = {0};
 
-uint32_t lastCalibrationTimes[12] = {0};
-uint32_t autoCalibrationInterval = 10000;
+uint32_t keyIdleSince[12] = {0};
 int16_t calibrationValues[12] = {0};
 bool canCalibrate[12] = {false};
 // pdm mic
@@ -226,6 +227,11 @@ audioLogger = &Serial;
     }
     delay(10);
   }
+
+  uint32_t startIdle = millis();
+  for (int i = 0; i < 12; i++) {
+    keyIdleSince[i] = startIdle;
+  }
   
  
   
@@ -260,21 +266,24 @@ void loop() {
     values[i] = touch_sensor.getKeySignal(i);
     averagedValues[i] =  kalman[i].updateEstimate(values[i]);
     int16_t value = averagedValues[i] - calibrationValues[i];
-    if (value <= 0) { // touch down
-      calibrationValues[i] = averagedValues[i];
+
+    bool idle = abs(value) <= IDLE_THRESHOLD;
+    if (idle) {
+      if (keyIdleSince[i] == 0) {
+        keyIdleSince[i] = now;
+      } else if (now - keyIdleSince[i] >= IDLE_RECALIBRATION_INTERVAL) {
+        calibrationValues[i] = averagedValues[i];
+        keyIdleSince[i] = now;
+      }
+    } else {
+      keyIdleSince[i] = 0;
     }
+
     // if (i==0) {
     //    out->SetGain(value/300);
     // }
     Serial.print(value);
     Serial.print('\t');
-  }
-
-  for (int i = 0; i<12; i++) {
-    if (now - lastCalibrationTimes[i] >= autoCalibrationInterval) {
-      lastCalibrationTimes[i] = now;
-      calibrationValues[i] = averagedValues[i];
-    }
   }
 
  
