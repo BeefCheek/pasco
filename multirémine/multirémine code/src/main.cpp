@@ -33,6 +33,7 @@ const int16_t IDLE_THRESHOLD = 8; // deviation band considered as idle
 const int16_t ACTIVE_THRESHOLD = 50; // deviation considered an active touch
 const int16_t STUCK_DELTA_THRESHOLD = 2; // minimal change to consider the signal moving
 const uint32_t STUCK_TIMEOUT = 2000; // ms of low movement while active before treating as stuck
+const uint16_t MOTION_ACCUM_THRESHOLD = 20; // accumulated change to consider the touch legitimate
 
 AT42QT2120 touch_sensor(Wire,ATQ_CHANGE);
 SimpleKalmanFilter* kalman = (SimpleKalmanFilter*)malloc(sizeof(SimpleKalmanFilter) * 12);
@@ -56,6 +57,7 @@ int16_t calibrationValues[12] = {0};
 int16_t lastAveragedValues[12] = {0};
 bool stuckFlag[12] = {false};
 bool canCalibrate[12] = {false};
+uint16_t motionAccum[12] = {0};
 // pdm mic
 
 #define I2S_SAMPLE_RATE   (16000) // Sample rate
@@ -288,8 +290,17 @@ void loop() {
     }
 
     bool active = abs(value) >= ACTIVE_THRESHOLD;
-    if (active && change > STUCK_DELTA_THRESHOLD) {
-      canCalibrate[i] = true;
+    if (active) {
+      if (motionAccum[i] < MOTION_ACCUM_THRESHOLD) {
+        uint32_t accum = (uint32_t)motionAccum[i] + (uint32_t)change;
+        motionAccum[i] = (accum > MOTION_ACCUM_THRESHOLD) ? MOTION_ACCUM_THRESHOLD : (uint16_t)accum;
+      }
+      if (motionAccum[i] >= MOTION_ACCUM_THRESHOLD) {
+        canCalibrate[i] = true;
+      }
+    } else {
+      motionAccum[i] = 0;
+      canCalibrate[i] = false;
     }
 
     if (active && !canCalibrate[i] && change <= STUCK_DELTA_THRESHOLD) {
@@ -299,13 +310,14 @@ void loop() {
         stuckFlag[i] = true;
         calibrationValues[i] = averagedValues[i];
         keyIdleSince[i] = now;
+        motionAccum[i] = 0;
+        canCalibrate[i] = false;
         Serial.print("[stuck] key ");
         Serial.println(i);
       }
     } else {
       stuckCandidateSince[i] = 0;
       stuckFlag[i] = false;
-      canCalibrate[i] = false;
     }
 
     lastAveragedValues[i] = averagedValues[i];
