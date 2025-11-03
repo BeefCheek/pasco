@@ -30,6 +30,9 @@ const int RESET_DELAY = 2000;
 const int CALIBRATION_LOOP_DELAY = 50;
 const uint32_t IDLE_RECALIBRATION_INTERVAL = 30000; // ms the key must stay idle before recalibration
 const int16_t IDLE_THRESHOLD = 8; // deviation band considered as idle
+const int16_t ACTIVE_THRESHOLD = 50; // deviation considered an active touch
+const int16_t STUCK_DELTA_THRESHOLD = 2; // minimal change to consider the signal moving
+const uint32_t STUCK_TIMEOUT = 2000; // ms of low movement while active before treating as stuck
 
 AT42QT2120 touch_sensor(Wire,ATQ_CHANGE);
 SimpleKalmanFilter* kalman = (SimpleKalmanFilter*)malloc(sizeof(SimpleKalmanFilter) * 12);
@@ -48,7 +51,10 @@ int16_t averagedValues[12] = {0};
 int16_t maxValues[12] = {0};
 
 uint32_t keyIdleSince[12] = {0};
+uint32_t stuckCandidateSince[12] = {0};
 int16_t calibrationValues[12] = {0};
+int16_t lastAveragedValues[12] = {0};
+bool stuckFlag[12] = {false};
 bool canCalibrate[12] = {false};
 // pdm mic
 
@@ -218,7 +224,7 @@ audioLogger = &Serial;
    setupSensor();
 
   for (int i = 0; i<12; i++) {
-    kalman[i] = SimpleKalmanFilter(20.0, 20.0, 0.1);
+    kalman[i] = SimpleKalmanFilter(35.0, 20.0, 0.08);
   }
   for (int x = 0; x<100; x++) {
     for (int i = 0; i<12; i++) {
@@ -231,6 +237,7 @@ audioLogger = &Serial;
   uint32_t startIdle = millis();
   for (int i = 0; i < 12; i++) {
     keyIdleSince[i] = startIdle;
+    lastAveragedValues[i] = calibrationValues[i];
   }
   
  
@@ -266,6 +273,7 @@ void loop() {
     values[i] = touch_sensor.getKeySignal(i);
     averagedValues[i] =  kalman[i].updateEstimate(values[i]);
     int16_t value = averagedValues[i] - calibrationValues[i];
+    int16_t change = abs(averagedValues[i] - lastAveragedValues[i]);
 
     bool idle = abs(value) <= IDLE_THRESHOLD;
     if (idle) {
@@ -278,6 +286,24 @@ void loop() {
     } else {
       keyIdleSince[i] = 0;
     }
+
+    bool active = abs(value) >= ACTIVE_THRESHOLD;
+    if (active && change <= STUCK_DELTA_THRESHOLD) {
+      if (stuckCandidateSince[i] == 0) {
+        stuckCandidateSince[i] = now;
+      } else if (!stuckFlag[i] && now - stuckCandidateSince[i] >= STUCK_TIMEOUT) {
+        stuckFlag[i] = true;
+        calibrationValues[i] = averagedValues[i];
+        keyIdleSince[i] = now;
+        Serial.print("[stuck] key ");
+        Serial.println(i);
+      }
+    } else {
+      stuckCandidateSince[i] = 0;
+      stuckFlag[i] = false;
+    }
+
+    lastAveragedValues[i] = averagedValues[i];
 
     // if (i==0) {
     //    out->SetGain(value/300);
