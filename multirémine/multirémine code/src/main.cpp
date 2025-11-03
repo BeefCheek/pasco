@@ -34,6 +34,7 @@ const int16_t ACTIVE_THRESHOLD = 50; // deviation considered an active touch
 const int16_t STUCK_DELTA_THRESHOLD = 2; // minimal change to consider the signal moving
 const uint32_t STUCK_TIMEOUT = 2000; // ms of low movement while active before treating as stuck
 const uint16_t MOTION_ACCUM_THRESHOLD = 20; // accumulated change to consider the touch legitimate
+const uint16_t STUCK_RECENTER_THRESHOLD = 200; // minimum deviation before accepting stuck recenter
 
 AT42QT2120 touch_sensor(Wire,ATQ_CHANGE);
 SimpleKalmanFilter* kalman = (SimpleKalmanFilter*)malloc(sizeof(SimpleKalmanFilter) * 12);
@@ -304,6 +305,10 @@ void loop() {
     }
 
     if (active && !canCalibrate[i] && change <= STUCK_DELTA_THRESHOLD) {
+      if (abs(value) < STUCK_RECENTER_THRESHOLD) {
+        stuckCandidateSince[i] = 0;
+        continue;
+      }
       if (stuckCandidateSince[i] == 0) {
         stuckCandidateSince[i] = now;
       } else if (!stuckFlag[i] && now - stuckCandidateSince[i] >= STUCK_TIMEOUT) {
