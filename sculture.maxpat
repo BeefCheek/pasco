@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -10.0, 501.0, 1233.0, 797.0 ],
+		"rect" : [ 200.0, 207.0, 1233.0, 797.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -354,12 +354,57 @@
 						}
 ,
 						"classnamespace" : "rnbo",
-						"rect" : [ 155.0, 158.0, 1486.0, 773.0 ],
+						"rect" : [ 34.0, 126.0, 1375.0, 785.0 ],
 						"default_fontname" : "Lato",
 						"gridsize" : [ 15.0, 15.0 ],
 						"toolbars_unpinned_last_save" : 4,
 						"title" : "untitled",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-61",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1213.0, 186.956518173217773, 67.0, 23.0 ],
+									"rnbo_classname" : "delay",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "delay_obj-61",
+									"text" : "delay 3000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 1203.0, 136.95651912689209, 56.0, 23.0 ],
+									"rnbo_classname" : "loadbang",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "loadbang_obj-54",
+									"text" : "loadbang"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "signal" ],
+									"patching_rect" : [ 62.0, 932.0, 29.5, 23.0 ],
+									"rnbo_classname" : "+~",
+									"rnbo_serial" : 2,
+									"rnbo_uniqueid" : "+~_obj-53",
+									"text" : "+~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-60",
 									"maxclass" : "newobj",
@@ -385,7 +430,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 149.0, 108.0, 33.0, 23.0 ],
+									"patching_rect" : [ 79.0, 108.086953639984131, 33.0, 23.0 ],
 									"rnbo_classname" : "*",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -404,7 +449,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 334.0, 113.0, 33.0, 23.0 ],
+									"patching_rect" : [ 299.0, 113.086953639984131, 33.0, 23.0 ],
 									"rnbo_classname" : "*",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -1419,7 +1464,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 163.0, 44.0, 66.0, 23.0 ],
+									"patching_rect" : [ 93.0, 44.086953639984131, 66.0, 23.0 ],
 									"rnbo_classname" : "slide",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -1438,7 +1483,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 238.0, 50.0, 66.0, 23.0 ],
+									"patching_rect" : [ 168.0, 50.086953639984131, 66.0, 23.0 ],
 									"rnbo_classname" : "slide",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -1457,7 +1502,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 308.5, 50.0, 66.0, 23.0 ],
+									"patching_rect" : [ 239.0, 50.086953639984131, 66.0, 23.0 ],
 									"rnbo_classname" : "slide",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -1476,7 +1521,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 364.0, 50.0, 66.0, 23.0 ],
+									"patching_rect" : [ 329.0, 50.086953639984131, 66.0, 23.0 ],
 									"rnbo_classname" : "slide",
 									"rnbo_extra_attributes" : 									{
 										"hot" : 0
@@ -1501,9 +1546,9 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 5,
+									"rnbo_serial" : 21,
 									"rnbo_uniqueid" : "slide_obj-33",
-									"text" : "slide 35 35"
+									"text" : "slide 25 25"
 								}
 
 							}
@@ -1520,9 +1565,9 @@
 										"hot" : 0
 									}
 ,
-									"rnbo_serial" : 6,
+									"rnbo_serial" : 20,
 									"rnbo_uniqueid" : "slide_obj-31",
-									"text" : "slide 35 35"
+									"text" : "slide 20 20"
 								}
 
 							}
@@ -2387,7 +2432,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 52.173912048339844, 932.608677864074707, 29.5, 23.0 ],
+									"patching_rect" : [ 62.0, 894.0, 29.5, 23.0 ],
 									"rnbo_classname" : "+~",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "+~_obj-228",
@@ -9495,7 +9540,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 334.0, 151.086953639984131, 24.0, 23.0 ],
+									"patching_rect" : [ 299.0, 151.086953639984131, 24.0, 23.0 ],
 									"rnbo_classname" : "s",
 									"rnbo_serial" : 7,
 									"rnbo_uniqueid" : "s_obj-73",
@@ -9510,7 +9555,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 277.0, 151.086953639984131, 24.0, 23.0 ],
+									"patching_rect" : [ 207.0, 151.086953639984131, 24.0, 23.0 ],
 									"rnbo_classname" : "s",
 									"rnbo_serial" : 8,
 									"rnbo_uniqueid" : "s_obj-72",
@@ -9539,7 +9584,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 207.0, 152.086953639984131, 24.0, 23.0 ],
+									"patching_rect" : [ 137.0, 152.086953639984131, 24.0, 23.0 ],
 									"rnbo_classname" : "s",
 									"rnbo_serial" : 10,
 									"rnbo_uniqueid" : "s_obj-70",
@@ -9568,7 +9613,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 137.0, 152.086953639984131, 24.0, 23.0 ],
+									"patching_rect" : [ 67.0, 152.086953639984131, 24.0, 23.0 ],
 									"rnbo_classname" : "s",
 									"rnbo_serial" : 12,
 									"rnbo_uniqueid" : "s_obj-68",
@@ -16998,23 +17043,30 @@
 								"box" : 								{
 									"id" : "obj-46",
 									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "signal" ],
-									"patching_rect" : [ 959.782590389251709, 493.478251457214355, 115.0, 23.0 ],
-									"rnbo_classname" : "param~",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 959.782590389251709, 493.478251457214355, 108.0, 23.0 ],
+									"rnbo_classname" : "param",
 									"rnbo_extra_attributes" : 									{
 										"maximum" : 1.0,
+										"sendinit" : 1,
 										"exponent" : 1.0,
+										"fromnormalized" : "",
 										"displayorder" : "-",
 										"minimum" : 0.0,
+										"preset" : 1,
+										"enum" : "",
 										"unit" : "",
 										"displayname" : "",
+										"tonormalized" : "",
 										"meta" : "",
+										"ctlin" : -1.0,
+										"order" : "0",
 										"steps" : 0.0
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 9,
 									"rnbo_uniqueid" : "samplesplay",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -17027,7 +17079,7 @@
 												"aliases" : [  ],
 												"settable" : 1,
 												"attachable" : 0,
-												"isparam" : 0,
+												"isparam" : 1,
 												"deprecated" : 0,
 												"touched" : 0,
 												"inlet" : 1,
@@ -17035,43 +17087,42 @@
 												"defaultValue" : "0"
 											}
 ,
-											"audioinlet" : 											{
+											"normalizedvalue" : 											{
 												"attrOrProp" : 1,
-												"digest" : "audioinlet",
+												"digest" : "Set value normalized. ",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
 												"touched" : 0,
-												"type" : "signal"
+												"inlet" : 1,
+												"type" : "number"
 											}
 ,
-											"sigin" : 											{
+											"reset" : 											{
 												"attrOrProp" : 1,
-												"digest" : "sigin",
+												"digest" : "Reset param to initial value",
 												"isalias" : 0,
 												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
+												"attachable" : 1,
 												"isparam" : 0,
 												"deprecated" : 0,
 												"touched" : 0,
-												"type" : "signal"
+												"type" : "bang"
 											}
 ,
-											"out" : 											{
+											"normalized" : 											{
 												"attrOrProp" : 1,
-												"digest" : "Parameter Value.",
+												"digest" : "Normalized parameter value.",
 												"isalias" : 0,
 												"aliases" : [  ],
-												"settable" : 0,
 												"attachable" : 0,
 												"isparam" : 0,
 												"deprecated" : 0,
 												"touched" : 0,
 												"outlet" : 1,
-												"type" : "signal"
+												"type" : "number"
 											}
 ,
 											"name" : 											{
@@ -17086,12 +17137,13 @@
 												"deprecated" : 0,
 												"touched" : 0,
 												"type" : "symbol",
-												"label" : "Parameter Name"
+												"label" : "Parameter Name",
+												"mandatory" : 1
 											}
 ,
-											"id" : 											{
+											"enum" : 											{
 												"attrOrProp" : 2,
-												"digest" : "DEPRECATED",
+												"digest" : "Use an enumerated output",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -17099,8 +17151,9 @@
 												"isparam" : 0,
 												"deprecated" : 0,
 												"touched" : 0,
-												"type" : "symbol",
-												"doNotShowInMaxInspector" : 1
+												"type" : "list",
+												"label" : "Enum Values",
+												"displayorder" : 6
 											}
 ,
 											"minimum" : 											{
@@ -17182,7 +17235,7 @@
 												"type" : "number",
 												"defaultValue" : "1",
 												"label" : "Exponent",
-												"displayorder" : 4
+												"displayorder" : 7
 											}
 ,
 											"steps" : 											{
@@ -17198,7 +17251,21 @@
 												"type" : "number",
 												"defaultValue" : "0",
 												"label" : "Steps",
-												"displayorder" : 5
+												"displayorder" : 8
+											}
+,
+											"displayName" : 											{
+												"attrOrProp" : 2,
+												"digest" : "DEPRECATED: Use the lower case 'displayname' instead",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 1,
+												"touched" : 0,
+												"type" : "symbol",
+												"label" : "Display Name"
 											}
 ,
 											"displayname" : 											{
@@ -17214,7 +17281,7 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Display Name",
-												"displayorder" : 7
+												"displayorder" : 14
 											}
 ,
 											"unit" : 											{
@@ -17230,12 +17297,58 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Unit",
-												"displayorder" : 7
+												"displayorder" : 15
+											}
+,
+											"tonormalized" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Converts a real parameter value to its normalized form",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "symbol",
+												"label" : "To Normalized Expression",
+												"displayorder" : 10
+											}
+,
+											"fromnormalized" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Converts a normalized parameter into its actual parameter value",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "symbol",
+												"label" : "From Normalized Expression",
+												"displayorder" : 9
+											}
+,
+											"order" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Order in which initial parameter values will be sent out on patcher load. The order can be numeric or symbolic ('first' and 'last')",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "symbol",
+												"defaultValue" : "0",
+												"label" : "Restore Order",
+												"displayorder" : 12
 											}
 ,
 											"displayorder" : 											{
 												"attrOrProp" : 2,
-												"digest" : "order of parameters",
+												"digest" : "Order in which parameters will show up in a list of all parameters. The order can be numeric or symbolic ('first' and 'last')",
 												"isalias" : 0,
 												"aliases" : [  ],
 												"settable" : 1,
@@ -17246,7 +17359,39 @@
 												"type" : "symbol",
 												"defaultValue" : "-",
 												"label" : "Display Order",
-												"displayorder" : 6
+												"displayorder" : 13
+											}
+,
+											"sendinit" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Send initial value",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "true",
+												"label" : "Send Init",
+												"displayorder" : 4
+											}
+,
+											"ctlin" : 											{
+												"attrOrProp" : 2,
+												"digest" : "MIDI controller number to control this parameter.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "number",
+												"defaultValue" : "-1",
+												"label" : "MIDI Controller Number.",
+												"displayorder" : 16
 											}
 ,
 											"meta" : 											{
@@ -17262,7 +17407,37 @@
 												"type" : "symbol",
 												"defaultValue" : "",
 												"label" : "Metadata",
-												"displayorder" : 8
+												"displayorder" : 17
+											}
+,
+											"nopreset" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Do not add this value to the preset [DEPRECATED - USE @preset 0 instead].",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 1,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "false"
+											}
+,
+											"preset" : 											{
+												"attrOrProp" : 2,
+												"digest" : "Add this value to the preset.",
+												"isalias" : 0,
+												"aliases" : [  ],
+												"settable" : 1,
+												"attachable" : 0,
+												"isparam" : 0,
+												"deprecated" : 0,
+												"touched" : 0,
+												"type" : "bool",
+												"defaultValue" : "true",
+												"label" : "Include In Preset",
+												"displayorder" : 11
 											}
 
 										}
@@ -17275,23 +17450,37 @@
 												"hot" : 1,
 												"docked" : 0
 											}
- ],
-										"outputs" : [ 											{
-												"name" : "out",
-												"type" : "signal",
-												"digest" : "Parameter Value.",
+, 											{
+												"name" : "normalizedvalue",
+												"type" : "number",
+												"digest" : "Set value normalized. ",
 												"docked" : 0
 											}
  ],
-										"helpname" : "param~",
-										"aliasOf" : "param~",
-										"classname" : "param~",
+										"outputs" : [ 											{
+												"name" : "value",
+												"type" : "number",
+												"digest" : "Parameter value",
+												"defaultarg" : 2,
+												"hot" : 1,
+												"docked" : 0
+											}
+, 											{
+												"name" : "normalized",
+												"type" : "number",
+												"digest" : "Normalized parameter value.",
+												"docked" : 0
+											}
+ ],
+										"helpname" : "param",
+										"aliasOf" : "param",
+										"classname" : "param",
 										"operator" : 0,
-										"versionId" : -282887640,
+										"versionId" : -1661410411,
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "param~ samplesplay",
+									"text" : "param samplesplay",
 									"varname" : "samplesplay"
 								}
 
@@ -17747,7 +17936,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 875.0, 670.0, 152.0, 23.0 ],
+									"patching_rect" : [ 756.521724700927734, 761.0, 384.0, 23.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
 										"type" : "",
@@ -17757,7 +17946,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 1,
+									"rnbo_serial" : 28,
 									"rnbo_uniqueid" : "buffer~_obj-6",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -18073,3377 +18262,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "buffer~ Z6A @file 6A2.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-4",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 875.0, 641.0, 151.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 2,
-									"rnbo_uniqueid" : "buffer~_obj-4",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ Z1B @file 1B2.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 902.0, 738.0, 164.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 3,
-									"rnbo_uniqueid" : "buffer~_obj-30",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ CLICP @file clicp.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-32",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 902.0, 765.0, 171.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 4,
-									"rnbo_uniqueid" : "buffer~_obj-32",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ CLICM @file clicm.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-93",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1081.521718502044678, 915.217373847961426, 250.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 14,
-									"rnbo_uniqueid" : "buffer~_obj-93",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ C3_NAPPE_1 @file C3_NAPPE_1.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-92",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1081.521718502044678, 944.565199375152588, 224.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 15,
-									"rnbo_uniqueid" : "buffer~_obj-92",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ C3_SON_2 @file C3_SON_2.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-91",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1081.521718502044678, 885.869548320770264, 224.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 16,
-									"rnbo_uniqueid" : "buffer~_obj-91",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ C3_SON_1 @file C3_SON_1.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-88",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1042.391284465789795, 692.39129114151001, 250.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 17,
-									"rnbo_uniqueid" : "buffer~_obj-88",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ B2_NAPPE_1 @file B2_NAPPE_1.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-87",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1042.391284465789795, 665.217378616333008, 223.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 18,
-									"rnbo_uniqueid" : "buffer~_obj-87",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ B2_SON_1 @file B2_SON_1.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-83",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1042.391284465789795, 601.086945056915283, 250.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 19,
-									"rnbo_uniqueid" : "buffer~_obj-83",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ A2_NAPPE_1 @file A2_NAPPE_1.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-82",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1042.391284465789795, 628.260857582092285, 223.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 20,
-									"rnbo_uniqueid" : "buffer~_obj-82",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ A2_SON_1 @file A2_SON_1.wav"
+									"text" : "buffer~ Z6A @file /Users/mathieupreux/Downloads/C3_NAPPE_1.wav"
 								}
 
 							}
@@ -21454,7 +18273,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1088.043457508087158, 856.521722793579102, 235.0, 23.0 ],
+									"patching_rect" : [ 778.260854721069336, 684.0, 425.0, 23.0 ],
 									"rnbo_classname" : "buffer~",
 									"rnbo_extra_attributes" : 									{
 										"type" : "",
@@ -21464,7 +18283,7 @@
 										"meta" : ""
 									}
 ,
-									"rnbo_serial" : 21,
+									"rnbo_serial" : 29,
 									"rnbo_uniqueid" : "buffer~_obj-75",
 									"rnboinfo" : 									{
 										"needsInstanceInfo" : 1,
@@ -21780,1151 +18599,7 @@
 										"changesPatcherIO" : 0
 									}
 ,
-									"text" : "buffer~ ASS_SON_2 @file ASS_SON_2.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-47",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "", "", "" ],
-									"patching_rect" : [ 1088.043457508087158, 823.913027763366699, 176.0, 23.0 ],
-									"rnbo_classname" : "buffer~",
-									"rnbo_extra_attributes" : 									{
-										"type" : "",
-										"samplerate" : 0.0,
-										"fill" : "",
-										"preset" : 0,
-										"meta" : ""
-									}
-,
-									"rnbo_serial" : 22,
-									"rnbo_uniqueid" : "buffer~_obj-47",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"info" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Bang to report buffer information.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "bang"
-											}
-,
-											"sizeout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"chanout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Number of Channels",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"srout" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sample rate",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"size" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [ "samples" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"samples" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Samples. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 2,
-												"isalias" : 1,
-												"aliasOf" : "size",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"sizems" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 0,
-												"aliases" : [ "ms" ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"ms" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Size in Milliseconds. Take care when setting, allocation might block audio processing.",
-												"isalias" : 1,
-												"aliasOf" : "sizems",
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"clear" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Clear the contents of the buffer",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"normalize" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Find Maximum and normalize to the value given.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0.995"
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Change channel count. Take care when setting, allocation might block audio processing.",
-												"defaultarg" : 3,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"name" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Name of the data buffer",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"file" : 											{
-												"attrOrProp" : 2,
-												"digest" : "File name/path or URL to load into buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"type" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Type of Data (float32, float64)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"samplerate" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Sample rate",
-												"defaultarg" : 4,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"fill" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Fill expression, this could be a value, or a simple function like sin(x), where x will run from 0 to 1 to fill the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol"
-											}
-,
-											"external" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Await data from the outside world.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"doNotShowInMaxInspector" : 1
-											}
-,
-											"preset" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Add this value to the preset.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bool",
-												"defaultValue" : "false",
-												"label" : "Include In Preset",
-												"category" : "Preset"
-											}
-,
-											"meta" : 											{
-												"attrOrProp" : 2,
-												"digest" : "A JSON formatted string containing metadata for use by the exported code",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"defaultValue" : "",
-												"label" : "Metadata"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "info",
-												"type" : "bang",
-												"digest" : "Bang to report buffer information.",
-												"hot" : 1,
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "sizeout",
-												"type" : "number",
-												"digest" : "Size in Samples",
-												"defaultarg" : 2,
-												"docked" : 0
-											}
-, 											{
-												"name" : "chanout",
-												"type" : "number",
-												"digest" : "Number of Channels",
-												"docked" : 0
-											}
-, 											{
-												"name" : "srout",
-												"type" : "number",
-												"digest" : "Sample rate",
-												"docked" : 0
-											}
- ],
-										"helpname" : "buffer~",
-										"aliasOf" : "data",
-										"classname" : "buffer~",
-										"operator" : 0,
-										"versionId" : -72996304,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "buffer~ G_2_3 @file G_2+3.wav"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-21",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 923.913025856018066, 422.82607889175415, 218.0, 23.0 ],
-									"rnbo_classname" : "groove~",
-									"rnbo_extra_attributes" : 									{
-										"synctype" : "relative",
-										"channels" : 1.0,
-										"syncmode" : "phase"
-									}
-,
-									"rnbo_serial" : 1,
-									"rnbo_uniqueid" : "groove~_obj-21",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"rate" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Playback rate.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"jumpto" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Jump to position (ms) and start playback.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"begin" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop min (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"end" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop max (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"out1" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The sample output.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"sync" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sync output (phase, samples, ms)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"loop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The word loop, followed by a `0` or `1`, disables/enables looping.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"crossfade" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Enable an attempted crossfade on loop jumpback. The fade depends on available sample material (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"stop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Stops the playback of the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"buffer" : 											{
-												"attrOrProp" : 1,
-												"digest" : "If multiple buffer names are declared to be used, this sets the currently active buffer using an index [0 based].",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"buffername" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Buffer to use",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Number of channels to read.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"syncmode" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Determines if the sync outlet reports phase (0..1), samples or milliseconds.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "phase", "samples", "ms" ],
-												"type" : "enum",
-												"defaultValue" : "phase"
-											}
-,
-											"synctype" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Set the sync signal to be relative to the loop length or absolute to the clip length.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "relative", "absolute" ],
-												"type" : "enum",
-												"defaultValue" : "relative"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "rate",
-												"type" : [ "bang", "auto" ],
-												"digest" : "Playback rate.",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "begin",
-												"type" : "auto",
-												"digest" : "Loop min (ms).",
-												"docked" : 0
-											}
-, 											{
-												"name" : "end",
-												"type" : "auto",
-												"digest" : "Loop max (ms).",
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "out1",
-												"type" : "signal",
-												"digest" : "The sample output.",
-												"docked" : 0
-											}
-, 											{
-												"name" : "sync",
-												"type" : "signal",
-												"digest" : "Sync output (phase, samples, ms)",
-												"docked" : 0
-											}
- ],
-										"helpname" : "groove~",
-										"aliasOf" : "groove~",
-										"classname" : "groove~",
-										"operator" : 0,
-										"versionId" : -147380827,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "groove~ @loop 1 @buffername Z1B"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 923.913025856018066, 386.956514358520508, 260.0, 23.0 ],
-									"rnbo_classname" : "groove~",
-									"rnbo_extra_attributes" : 									{
-										"synctype" : "relative",
-										"channels" : 1.0,
-										"syncmode" : "phase"
-									}
-,
-									"rnbo_serial" : 2,
-									"rnbo_uniqueid" : "groove~_obj-18",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"rate" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Playback rate.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"jumpto" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Jump to position (ms) and start playback.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"begin" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop min (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"end" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop max (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"out1" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The sample output.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"sync" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sync output (phase, samples, ms)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"loop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The word loop, followed by a `0` or `1`, disables/enables looping.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"crossfade" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Enable an attempted crossfade on loop jumpback. The fade depends on available sample material (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"stop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Stops the playback of the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"buffer" : 											{
-												"attrOrProp" : 1,
-												"digest" : "If multiple buffer names are declared to be used, this sets the currently active buffer using an index [0 based].",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"buffername" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Buffer to use",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Number of channels to read.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"syncmode" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Determines if the sync outlet reports phase (0..1), samples or milliseconds.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "phase", "samples", "ms" ],
-												"type" : "enum",
-												"defaultValue" : "phase"
-											}
-,
-											"synctype" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Set the sync signal to be relative to the loop length or absolute to the clip length.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "relative", "absolute" ],
-												"type" : "enum",
-												"defaultValue" : "relative"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "rate",
-												"type" : [ "bang", "auto" ],
-												"digest" : "Playback rate.",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "begin",
-												"type" : "auto",
-												"digest" : "Loop min (ms).",
-												"docked" : 0
-											}
-, 											{
-												"name" : "end",
-												"type" : "auto",
-												"digest" : "Loop max (ms).",
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "out1",
-												"type" : "signal",
-												"digest" : "The sample output.",
-												"docked" : 0
-											}
-, 											{
-												"name" : "sync",
-												"type" : "signal",
-												"digest" : "Sync output (phase, samples, ms)",
-												"docked" : 0
-											}
- ],
-										"helpname" : "groove~",
-										"aliasOf" : "groove~",
-										"classname" : "groove~",
-										"operator" : 0,
-										"versionId" : -147380827,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "groove~ @loop 1 @buffername C3_SON_1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 13.0,
-									"id" : "obj-17",
-									"maxclass" : "newobj",
-									"numinlets" : 3,
-									"numoutlets" : 2,
-									"outlettype" : [ "signal", "signal" ],
-									"patching_rect" : [ 930.434764862060547, 361.956514835357666, 234.0, 23.0 ],
-									"rnbo_classname" : "groove~",
-									"rnbo_extra_attributes" : 									{
-										"synctype" : "relative",
-										"channels" : 1.0,
-										"syncmode" : "phase"
-									}
-,
-									"rnbo_serial" : 3,
-									"rnbo_uniqueid" : "groove~_obj-17",
-									"rnboinfo" : 									{
-										"needsInstanceInfo" : 1,
-										"argnames" : 										{
-											"rate" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Playback rate.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"jumpto" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Jump to position (ms) and start playback.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"begin" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop min (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"end" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Loop max (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"inlet" : 1,
-												"type" : "number",
-												"defaultValue" : "-1"
-											}
-,
-											"out1" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The sample output.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"sync" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Sync output (phase, samples, ms)",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 0,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"outlet" : 1,
-												"type" : "signal"
-											}
-,
-											"loop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "The word loop, followed by a `0` or `1`, disables/enables looping.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"crossfade" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Enable an attempted crossfade on loop jumpback. The fade depends on available sample material (ms).",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"stop" : 											{
-												"attrOrProp" : 1,
-												"digest" : "Stops the playback of the buffer.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "bang"
-											}
-,
-											"buffer" : 											{
-												"attrOrProp" : 1,
-												"digest" : "If multiple buffer names are declared to be used, this sets the currently active buffer using an index [0 based].",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"attachable" : 1,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "0"
-											}
-,
-											"buffername" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Buffer to use",
-												"defaultarg" : 1,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "symbol",
-												"mandatory" : 1
-											}
-,
-											"channels" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Number of channels to read.",
-												"defaultarg" : 2,
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"type" : "number",
-												"defaultValue" : "1"
-											}
-,
-											"syncmode" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Determines if the sync outlet reports phase (0..1), samples or milliseconds.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "phase", "samples", "ms" ],
-												"type" : "enum",
-												"defaultValue" : "phase"
-											}
-,
-											"synctype" : 											{
-												"attrOrProp" : 2,
-												"digest" : "Set the sync signal to be relative to the loop length or absolute to the clip length.",
-												"isalias" : 0,
-												"aliases" : [  ],
-												"settable" : 1,
-												"attachable" : 0,
-												"isparam" : 0,
-												"deprecated" : 0,
-												"touched" : 0,
-												"enum" : [ "relative", "absolute" ],
-												"type" : "enum",
-												"defaultValue" : "relative"
-											}
-
-										}
-,
-										"inputs" : [ 											{
-												"name" : "rate",
-												"type" : [ "bang", "auto" ],
-												"digest" : "Playback rate.",
-												"hot" : 1,
-												"docked" : 0
-											}
-, 											{
-												"name" : "begin",
-												"type" : "auto",
-												"digest" : "Loop min (ms).",
-												"docked" : 0
-											}
-, 											{
-												"name" : "end",
-												"type" : "auto",
-												"digest" : "Loop max (ms).",
-												"docked" : 0
-											}
- ],
-										"outputs" : [ 											{
-												"name" : "out1",
-												"type" : "signal",
-												"digest" : "The sample output.",
-												"docked" : 0
-											}
-, 											{
-												"name" : "sync",
-												"type" : "signal",
-												"digest" : "Sync output (phase, samples, ms)",
-												"docked" : 0
-											}
- ],
-										"helpname" : "groove~",
-										"aliasOf" : "groove~",
-										"classname" : "groove~",
-										"operator" : 0,
-										"versionId" : -147380827,
-										"changesPatcherIO" : 0
-									}
-,
-									"text" : "groove~ @loop 1 @buffername CLICM"
+									"text" : "buffer~ ASS_SON_2 @file /Users/mathieupreux/Downloads/B2_NAPPE_1.wav"
 								}
 
 							}
@@ -23292,7 +18967,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 474.0, -204.0, 85.0, 23.0 ],
+									"patching_rect" : [ 474.0, -202.0, 85.0, 23.0 ],
 									"rnbo_classname" : "inport",
 									"rnbo_extra_attributes" : 									{
 										"meta" : ""
@@ -23311,7 +18986,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1181.521716594696045, 186.956518173217773, 56.0, 23.0 ],
+									"patching_rect" : [ 1040.782590389251709, 186.956518173217773, 56.0, 23.0 ],
 									"rnbo_classname" : "loadbang",
 									"rnbo_serial" : 1,
 									"rnbo_uniqueid" : "loadbang_obj-5",
@@ -24464,7 +20139,7 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-3", 0 ],
+									"destination" : [ "obj-53", 0 ],
 									"source" : [ "obj-228", 0 ]
 								}
 
@@ -24705,33 +20380,23 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-17", 0 ],
-									"order" : 2,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"order" : 4,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-21", 0 ],
-									"order" : 3,
-									"source" : [ "obj-5", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-26", 0 ],
 									"order" : 0,
 									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-61", 0 ],
+									"source" : [ "obj-54", 0 ]
 								}
 
 							}
@@ -24774,6 +20439,22 @@
 								"patchline" : 								{
 									"destination" : [ "obj-84", 0 ],
 									"source" : [ "obj-60", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-11", 0 ],
+									"order" : 1,
+									"source" : [ "obj-61", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"order" : 0,
+									"source" : [ "obj-61", 0 ]
 								}
 
 							}
@@ -24825,6 +20506,10 @@
 								"rnbo_rnbo._oscjson._tcp.local-rnbo_rnbo" : 								{
 									"polyphony" : "disabled",
 									"include_presets" : 1,
+									"copy_dependencies" : 1
+								}
+,
+								"rnbo_rnbo._oscjson._tcp.local.-rnbo_rnbo" : 								{
 									"copy_dependencies" : 1
 								}
 
@@ -25056,6 +20741,10 @@
 								"value" : 8.0
 							}
 ,
+							"samplesplay" : 							{
+								"value" : 0.017974513868526
+							}
+,
 							"softmax4_p" : 							{
 								"value" : 0.0000000045125
 							}
@@ -25167,6 +20856,10 @@
 ,
 										"kv" : 										{
 											"value" : 8.0
+										}
+,
+										"samplesplay" : 										{
+											"value" : 0.017974513868526
 										}
 ,
 										"softmax4_p" : 										{
@@ -25447,6 +21140,20 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "B2_NAPPE_1.wav",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../Downloads",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "C3_NAPPE_1.wav",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../../Downloads",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "untitled.maxsnap",
 				"bootpath" : "~/Documents/Max 8/Snapshots",
 				"patcherrelativepath" : "../../../Documents/Max 8/Snapshots",

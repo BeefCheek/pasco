@@ -288,7 +288,11 @@ void loop() {
     }
 
     bool active = abs(value) >= ACTIVE_THRESHOLD;
-    if (active && change <= STUCK_DELTA_THRESHOLD) {
+    if (active && change > STUCK_DELTA_THRESHOLD) {
+      canCalibrate[i] = true;
+    }
+
+    if (active && !canCalibrate[i] && change <= STUCK_DELTA_THRESHOLD) {
       if (stuckCandidateSince[i] == 0) {
         stuckCandidateSince[i] = now;
       } else if (!stuckFlag[i] && now - stuckCandidateSince[i] >= STUCK_TIMEOUT) {
@@ -301,6 +305,7 @@ void loop() {
     } else {
       stuckCandidateSince[i] = 0;
       stuckFlag[i] = false;
+      canCalibrate[i] = false;
     }
 
     lastAveragedValues[i] = averagedValues[i];
